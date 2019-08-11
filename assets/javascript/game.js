@@ -5,22 +5,29 @@
  var y = 120;
  var wins = [];
  var losses = [];
+var crystalValue = [];
+var targetNumber = [];
+var counter = [];
+
+ var startGame = function(event) {
 
 
  //generates the target number randomly between 19 and 120
- var targetNumber = Math.floor(Math.random() * ((y - x) + 1) + x);
+  targetNumber = Math.floor(Math.random() * ((y - x) + 1) + x);
 
  //generates the crystal value randomly between 1 and 12
  //crystal value is an array generating a random number in range(19-120) for each index [0,1,2,3]
- var crystalValue = [Math.floor(Math.random() * ((w - v) + 1) + v), Math.floor(Math.random() * ((w - v) + 1) + v), Math.floor(Math.random() * ((w - v) + 1) + v), Math.floor(Math.random() * ((w - v) + 1) + v)];
+ crystalValue = [Math.floor(Math.random() * ((w - v) + 1) + v), Math.floor(Math.random() * ((w - v) + 1) + v), Math.floor(Math.random() * ((w - v) + 1) + v), Math.floor(Math.random() * ((w - v) + 1) + v)];
  console.log("Crystal values are " + crystalValue);
 
 
  $("#number-to-guess").text(targetNumber);
 
 
- var counter = 0;
+ counter = 0;
+}
 
+startGame();
  // Now for the hard part. Creating multiple crystals each with their own unique number value.
 
  // Next we create a for loop to create crystals for every numberOption.
@@ -67,12 +74,14 @@
          alert("You win!");
          wins++;
          $("#wins-text").text(wins);
+         startGame();
      }
 
      else if (counter >= targetNumber) {
          alert("You lose!!");
          losses++;
          $("#losses-text").text(losses);
+         startGame();
      }
 
  });
