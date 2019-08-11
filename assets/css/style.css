@@ -1,0 +1,20 @@
+.crystal-image {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    font-size:50px;
+    color:red;
+    background:orange;
+}
+
+h2 {
+    font-size:30px;
+    color:white;
+    background:black;
+}
+
+body {
+    text-align: center;
+}
