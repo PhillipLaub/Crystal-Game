@@ -3,8 +3,8 @@
  var w = 12;
  var x = 19;
  var y = 120;
- var wins = [];
- var losses = [];
+ var wins = 0;
+ var losses = 0;
 var crystalValue = [];
 var targetNumber = [];
 var counter = [];
@@ -12,6 +12,7 @@ var counter = [];
  var startGame = function(event) {
 
 
+  counter = 0;
  //generates the target number randomly between 19 and 120
   targetNumber = Math.floor(Math.random() * ((y - x) + 1) + x);
 
@@ -22,9 +23,10 @@ var counter = [];
 
 
  $("#number-to-guess").text(targetNumber);
+ 
+ $("#scores-text").text(counter);
 
 
- counter = 0;
 }
 
 startGame();
