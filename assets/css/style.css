@@ -2,6 +2,7 @@
     width: 200px;
     height: 200px;
     padding:20px;
+    
 }
 
 h2 {
@@ -18,13 +19,19 @@ body {
 }
 
 p {
-    background:black;
     color:#ffffff;
     font-size:25px;
 }
 
+
 .headerTitle {
-    font-size:50px;
+    font-size:60px;
+    opacity: 0.9;
+    color:white;
+}
+
+.headerTitle2 {
+    font-size:40px;
     opacity: 0.9;
     color:white;
 }
@@ -37,6 +44,24 @@ p {
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
   }
+
+  .crystal-image:hover{  
+      
+    animation: pulse .5s infinite;
+    animation-timing-function: linear;  
+  }
+  
+  .numGuess {
+      font:100px;
+      color:white;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1)};
+    100% { transform: scale(1); }
+    }
+  
   
   @-webkit-keyframes glow {
     from {
