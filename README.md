@@ -1,4 +1,4 @@
-# unit-4-game
+Crystal Game
 
 -What the project does
 Follow the intructions listed on the page. The Crystal game picks a random number in range for the "Number to Guess," as well as randomly assigns values that you cannot see for each of the four crystals. Goal is to click on each crystal adding points to your total, and try to hit the number to guess exactly without going over. The game features win and loss counters, and will reset after each win or loss.
