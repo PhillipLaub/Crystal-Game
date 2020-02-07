@@ -1,9 +1,9 @@
-.crystal-image {
-    width: 200px;
-    height: 200px;
-    padding:20px;
+/* .crystal-image {
+    width: 20vh;
+    height: 20vh;
+    padding:2%;
     
-}
+} */
 
 h2 {
     font-size:30px;
@@ -16,6 +16,14 @@ body {
     text-align: center;
     background-image: url("../images/background3.jpg");
     font-family: 'Amatic SC', cursive;
+    margin:5%;
+    
+    
+}
+
+img {
+  width:18vh;
+  margin:1vh !important;
 }
 
 p {
@@ -32,8 +40,9 @@ p {
 
 .headerTitle2 {
     font-size:40px;
-    opacity: 0.9;
+    opacity: 0.8;
     color:white;
+    background:black;
 }
 
 .glow {
@@ -54,6 +63,11 @@ p {
   .numGuess {
       font:100px;
       color:white;
+  }
+
+  .instructions {
+    background:black;
+    opacity: 0.8;
   }
   
   @keyframes pulse {

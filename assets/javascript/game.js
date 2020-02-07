@@ -33,7 +33,6 @@ for (var i = 0; i < crystalValue.length; i++) {
     var imageCrystal = $("<img>");
 
     imageCrystal.addClass("crystal-image");
-
     imageCrystal.attr("src", "http://aux3.iconspalace.com/uploads/5123983611224387580.png");
 
     imageCrystal.attr("data-crystalvalue", crystalValue[i]);
